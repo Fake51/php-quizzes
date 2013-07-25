@@ -11,8 +11,14 @@
     <script src="js.js"></script>
 </head>
 <body>
-    <section>
-        <header>Operator precedence quiz</header>
+    <nav>
+        <ul class="nav nav-pills">
+            <li><a href="#dragdroptest">Drag-n-drop quiz</a>
+            <li><a href="#abtest">A/B quiz</a>
+        </ul>
+    </nav>
+    <section id="dragdroptest">
+        <header>Operator precedence quiz - drag-n-drop</header>
         <p><em>Hit start to scramble the list, then drag-n-drop to order it. When done, check if you got it right. Lather, rinse, repeat</em></p>
         <div class="rows content">
             <div class="span4">
@@ -44,6 +50,17 @@
                     <li class="last" data-index="21">,</li>
                 </ul>
             </div>
+            <div class="clear-all"></div>
+        </div>
+    </section>
+    <section id="abtest">
+        <header>Operator precedence quiz - A/B</header>
+        <p><em>Pick the higher operator level</em></p>
+        <div class="rows content">
+            <p class="offset2 span10" id="ab-scores"></p>
+            <div class="offset2 span3 testcase" id="test_a"> </div>
+            <div class="span1 testcenter">?</div>
+            <div class="span3 testcase" id="test_b"> </div>
             <div class="clear-all"></div>
         </div>
     </section>

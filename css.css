@@ -50,3 +50,18 @@ section header {
 footer {
     padding: 1em;
 }
+
+.testcenter {
+    text-align: center;
+    line-height: 10em;
+}
+
+div.testcase {
+    height: 10em;
+    background-color: #fff;
+    box-shadow: .2em .2em .5em rgba(0, 0, 0, .3);
+    border-radius: 1em;
+    text-align: center;
+    cursor: pointer;
+    line-height: 10em;
+}
