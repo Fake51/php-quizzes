@@ -1,0 +1,48 @@
+#precedence-list {
+    margin-bottom: 0;
+}
+
+#precedence-list li {
+    padding: .3em;
+    margin-bottom: .5em;
+    box-shadow: .2em .2em .5em rgba(0, 0, 0, .3);
+    transition: background-color 0.5s ease;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#precedence-list li.last {
+    margin: 0;
+}
+
+#precedence-list li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+section {
+    padding: 1em;
+}
+
+section header {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+.content {
+    background-color: #ddd;
+    padding: 1em 0;
+}
+
+.clear-all {
+    clear: both;
+}
+
+.white {
+    background-color: #fff;
+}
+
+#precedence-scores {
+    margin-top: 2em;
+}

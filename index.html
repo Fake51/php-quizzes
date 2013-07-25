@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple tools for practicing PHP knowledge</title>
+    <meta name="description" content="Small set of tools/quizzes for practicing your php knowledge - operator precedence, etc">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="css.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    <section>
+        <header>Operator precedence quiz</header>
+        <p><em>Hit start to scramble the list, then drag-n-drop to order it. When done, check if you got it right. Lather, rinse, repeat</em></p>
+        <div class="rows content">
+            <div class="span4">
+                <button class="btn btn-primary" id="precedence">Start</button>
+                <p id="precedence-scores"></p>
+            </div>
+            <div class="span8 white">
+                <ul id="precedence-list" class="unstyled">
+                    <li data-index="1">clone, new</li>
+                    <li data-index="2">[</li>
+                    <li data-index="3">++, --, ~, (bool), (int), (string), (float), (object), (array), (unset), @</li>
+                    <li data-index="4">instanceof</li>
+                    <li data-index="5">!</li>
+                    <li data-index="6">*, /, %</li>
+                    <li data-index="7">+, -, .</li>
+                    <li data-index="8">&lt;&lt;, &gt;&gt;</li>
+                    <li data-index="9">&lt;, &lt;=, &gt;=, &gt;</li>
+                    <li data-index="10">==, ===, !=, !==, &lt;&gt;</li>
+                    <li data-index="11">&amp;</li>
+                    <li data-index="12">^</li>
+                    <li data-index="13">|</li>
+                    <li data-index="14">&amp;&amp;</li>
+                    <li data-index="15">||</li>
+                    <li data-index="16">? :</li>
+                    <li data-index="17">=, +=, -=, *=, /=, %= &lt;&lt;=, &gt;&gt;=, .=, &amp;=, |=, ^=, =&gt;</li>
+                    <li data-index="18">and</li>
+                    <li data-index="19">xor</li>
+                    <li data-index="20">or</li>
+                    <li class="last" data-index="21">,</li>
+                </ul>
+            </div>
+            <div class="clear-all"></div>
+        </div>
+    </section>
+</body>
+</html>
