@@ -46,3 +46,7 @@ section header {
 #precedence-scores {
     margin-top: 2em;
 }
+
+footer {
+    padding: 1em;
+}
