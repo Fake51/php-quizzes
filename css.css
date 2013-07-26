@@ -57,11 +57,12 @@ footer {
 }
 
 div.testcase {
-    height: 10em;
+    height: 5em;
     background-color: #fff;
     box-shadow: .2em .2em .5em rgba(0, 0, 0, .3);
     border-radius: 1em;
     text-align: center;
     cursor: pointer;
-    line-height: 10em;
+    line-height: 5em;
+    font-size: 2em;
 }
