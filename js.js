@@ -107,29 +107,24 @@ var precedence = {
 
         setupTest: function() {
             var a = Math.floor(Math.random() * 20),
-                b;
+                b,
+                temp;
 
             do {
                 b = Math.floor(Math.random() * 20);
             } while (a == b);
 
-            this.test_a.html(this.operators[a])
+            temp = this.operators[a].split(/, /);
+            temp = temp.length > 1 ? temp[Math.floor(Math.random() * temp.length)] : temp[0];
+
+            this.test_a.html(temp)
                 .attr('data-index', a);
 
-            this.test_b.html(this.operators[b])
+            temp = this.operators[b].split(/, /);
+            temp = temp.length > 1 ? temp[Math.floor(Math.random() * temp.length)] : temp[0];
+
+            this.test_b.html(temp)
                 .attr('data-index', b);
-
-            if (a == 2 || a == 16) {
-                this.test_a.css('line-height', '5em');
-            } else {
-                this.test_a.css('line-height', '10em');
-            }
-
-            if (b == 2 || b == 16) {
-                this.test_b.css('line-height', '5em');
-            } else {
-                this.test_b.css('line-height', '10em');
-            }
 
             this.current_winner = a < b ? a : b;
         },
@@ -154,7 +149,7 @@ var precedence = {
 
             window.setTimeout(function() {
                 that.reset();
-            }, 3000);
+            }, 1500);
 
             if (parseInt(element.attr('data-index'), 10) == this.current_winner) {
                 element.css('background-color', '#afa');
