@@ -27,27 +27,6 @@
             </div>
             <div class="span8 white">
                 <ul id="precedence-list" class="unstyled">
-                    <li data-index="1">clone, new</li>
-                    <li data-index="2">[</li>
-                    <li data-index="3">++, --, ~, (bool), (int), (string), (float), (object), (array), (unset), @</li>
-                    <li data-index="4">instanceof</li>
-                    <li data-index="5">!</li>
-                    <li data-index="6">*, /, %</li>
-                    <li data-index="7">+, -, .</li>
-                    <li data-index="8">&lt;&lt;, &gt;&gt;</li>
-                    <li data-index="9">&lt;, &lt;=, &gt;=, &gt;</li>
-                    <li data-index="10">==, ===, !=, !==, &lt;&gt;</li>
-                    <li data-index="11">&amp;</li>
-                    <li data-index="12">^</li>
-                    <li data-index="13">|</li>
-                    <li data-index="14">&amp;&amp;</li>
-                    <li data-index="15">||</li>
-                    <li data-index="16">? :</li>
-                    <li data-index="17">=, +=, -=, *=, /=, %= &lt;&lt;=, &gt;&gt;=, .=, &amp;=, |=, ^=, =&gt;</li>
-                    <li data-index="18">and</li>
-                    <li data-index="19">xor</li>
-                    <li data-index="20">or</li>
-                    <li class="last" data-index="21">,</li>
                 </ul>
             </div>
             <div class="clear-all"></div>
@@ -61,6 +40,18 @@
             <div class="offset2 span3 testcase" id="test_a"> </div>
             <div class="span1 testcenter">?</div>
             <div class="span3 testcase" id="test_b"> </div>
+            <div class="clear-all"></div>
+        </div>
+    </section>
+    <section id="calculate">
+        <header>Operator calculation quiz</header>
+        <p><em>Figure out the result of the expression</em></p>
+        <div class="rows content">
+            <p id="calculation-scores"></p>
+            <p id="expression-parts"><label><input type="number"> Binary/ternary operators</label><label><input type="checkbox"> Use operators that resolve to bool</label></p>
+            <div class="span8" id="expression"> </div>
+            <div class="span1 testcenter">equals</div>
+            <div class="span2 input-field"><input type="text" placeholder="Your guess" pattern="(\d+|false|true)" id="calculation"></div>
             <div class="clear-all"></div>
         </div>
     </section>
